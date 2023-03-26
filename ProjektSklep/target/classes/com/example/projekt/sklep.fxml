@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969e24;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.artykulyController">
+   <children>
+      <TableView fx:id="tab" layoutX="17.0" layoutY="145.0" prefHeight="459.0" prefWidth="740.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+        <columns>
+          <TableColumn fx:id="tab_id" minWidth="47.0" prefWidth="50.0" text="ID" />
+          <TableColumn fx:id="tab_produkt" prefWidth="172.0" text="Produkt" />
+            <TableColumn fx:id="tab_cena" prefWidth="172.0" text="Cena" />
+            <TableColumn fx:id="tab_cenaapp" prefWidth="172.0" text="Cena z aplikacją" />
+            <TableColumn fx:id="tab_limit" prefWidth="172.0" text="Limit Produktów w promocji" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="34.0" text="Z aplkacją płacisz mniej!">
+         <font>
+            <Font name="Arial Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="66.0" layoutX="671.0" layoutY="29.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logout.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

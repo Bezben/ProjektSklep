@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #969e24;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.logowanieController">
+   <children>
+      <HBox layoutY="-43.0" prefHeight="60.0" prefWidth="279.0" style="-fx-border-color: #191a10; -fx-border-width: 5;" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="321.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#logowaniepokaz" style="-fx-background-color: #cfdb1d;" text="Logowanie">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#rejestracjapokaz" style="-fx-background-color: #969e24;" text="Rejestracja">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="pane_logowanie" layoutX="-1.0" layoutY="72.0" prefHeight="347.0" prefWidth="279.0" style="-fx-background-color: #191a10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="53.0">
+         <children>
+            <TextField fx:id="nazwa" layoutX="25.0" layoutY="104.0" prefHeight="25.0" prefWidth="237.0" promptText="Nazwa użytkowniika" style="-fx-background-color: #969e24; -fx-font-style: #191a10;" />
+            <ComboBox fx:id="rola" layoutX="128.0" layoutY="46.0" prefHeight="25.0" prefWidth="134.0" promptText="Wybierz role" style="-fx-background-color: #969e24;" />
+            <PasswordField fx:id="haslo" layoutX="25.0" layoutY="161.0" prefHeight="25.0" prefWidth="237.0" promptText="Hasło" style="-fx-background-color: #969e24;" />
+            <Button fx:id="zaloguj" layoutX="95.0" layoutY="229.0" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: #969e24;" text="Zaloguj">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="397.0" fitWidth="308.0" layoutX="279.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pngwing.com.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pane_rejestracja" layoutX="14.0" layoutY="170.0" prefHeight="400.0" prefWidth="279.0" style="-fx-background-color: #191a10;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="53.0">
+         <children>
+            <TextField fx:id="wpisz_nazwe" layoutX="20.0" layoutY="99.0" prefHeight="25.0" prefWidth="245.0" promptText="Nazwa użytkownika" style="-fx-background-color: #969e24;" />
+            <TextField fx:id="wpisz_email" layoutX="21.0" layoutY="149.0" prefHeight="25.0" prefWidth="245.0" promptText="E-mail" style="-fx-background-color: #969e24;" />
+            <ComboBox fx:id="wybierz_role" layoutX="20.0" layoutY="46.0" prefHeight="25.0" prefWidth="245.0" promptText="Wybierz role" style="-fx-background-color: #969e24;" />
+            <Button layoutX="77.0" layoutY="264.0" mnemonicParsing="false" onAction="#Rejestracja" style="-fx-background-color: #969e24;" text="Zarejestruj">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="wpisz_haslo" layoutX="21.0" layoutY="195.0" prefHeight="25.0" prefWidth="245.0" promptText="Hasło" style="-fx-background-color: #969e24;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
